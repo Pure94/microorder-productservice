@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface ProductManagerFacade
 {
-    Long createProduct(ProductRequest product);
+    String createProduct(ProductRequest product);
 
     List<ProductResponse> getProducts();
 }

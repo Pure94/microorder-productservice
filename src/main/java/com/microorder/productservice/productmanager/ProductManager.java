@@ -14,7 +14,7 @@ class ProductManager implements ProductManagerFacade
     private final ProductRepository productRepository;
 
     @Override
-    public Long createProduct(final ProductRequest product)
+    public String createProduct(final ProductRequest product)
     {
         final ProductEntity productEntity = ProductMapper.mapToEntity(product);
         productRepository.save(productEntity);

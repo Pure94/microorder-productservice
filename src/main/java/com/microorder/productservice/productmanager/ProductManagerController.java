@@ -23,7 +23,7 @@ class ProductManagerController
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    Long createProduct(@RequestBody ProductRequest product)
+    String createProduct(@RequestBody ProductRequest product)
     {
         return productManager.createProduct(product);
     }
