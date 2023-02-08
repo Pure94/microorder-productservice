@@ -4,7 +4,7 @@ import org.testcontainers.containers.MongoDBContainer;
 
 public class MongoDBTestContainer extends MongoDBContainer
 {
-    static final String IMAGE_VERSION = "mongo:4.4.2";
+    static final String IMAGE_VERSION = "mongo:6.0.4";
     private static MongoDBTestContainer container;
 
     private MongoDBTestContainer()
